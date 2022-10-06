@@ -4,6 +4,11 @@
     
 }
 
+#bodystyle{
+    height: 100%;
+    background-image: url(fundopreto.jpg);
+    }
+
 header{
     background-color: rgb(255, 255, 255);
     padding: 20px 0px;
@@ -11,7 +16,6 @@ header{
     border-bottom: 2px solid black;
     border-radius: 7px;
     position: fixed;
-    top: 0px;
     }
 
     header nav{    
@@ -42,19 +46,13 @@ header{
 }
 
 #imglogo{
-   width: 29px;
-   left: 10px;  
+   width: 29px; 
 }
 
-#bodystyle{
-    height: 100%;
-    background-image: url(fundopreto.jpg);
-}
-
-#sectionone{
-    position: block;
-    bottom: 100px;
-    
+.sectionone{
+    border-bottom: 3px solid white;
+    border-radius: 7px;
+    padding-top: 70px;  
 }
 
 #sectiontitle{
@@ -63,7 +61,6 @@ header{
         color: rgb(222, 222, 222);
         border-top: 3px solid white;
         border-radius: 7px;
-        margin-top: 70px;
     }
 
 #sectiontext{
