@@ -1,86 +1,85 @@
-*{ margin: 0px;
-    padding: 0px;
+*{ 
+    margin: 0px;
+    padding: 0px;;
     
 }
+
 header{
-    
     background-color: rgb(255, 255, 255);
     padding: 20px 0px;
+    width: 100%; 
+    border-bottom: 2px solid black;
+    border-radius: 7px;
     position: fixed;
-    width: 100%;
-    
     }
-nav{
-    
+
+nav{    
     display: flex;
     justify-content: space-between;
 }
-    header nav ul{
+    header nav menu{
         display: flex;
-        list-style: none;
-        
+        list-style: none;       
     }
+    
 
-    header nav ul li{
-        display: flex;
-        
-        
-    }
-
-    header nav ul li a{
+    header nav menu a{
         text-decoration: none;
         text-transform: uppercase;
         color: rgb(0, 0, 0);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
         padding: 2px 10px;
-        display: flex;
         white-space: nowrap;
                 
     }
     
-    header nav ul li a:hover{
+    header nav menu a:hover{
         color: rgb(255, 144, 144)
         }
 
-
-
 #img{
-    
-    width: 18px;
-        }
-
-#imglogo{
-   
-    width: 27px;
-         
+    height: 20px;
+}
+#menu{
+    position: relative;
+    left: 30px;
 }
 
+#imglogo{
+   width: 29px;
+   position: relative;
+   left: 10px;         
+}
 
-
-
+body{
+    height: 100%;
+    background-image: url(fundopreto.jpg);
+}
 section{
-    display: block;
-    padding-top: 80px;
     font-size: 40px;
+    color: rgb(222,222,222);
+    border-bottom: 4px solid white;
+    border-radius: 7px;
+    padding-top: 4.8%;
 }
     section h1{
         
         text-align: center;
         font-size: 60px;
+        border-top: 3px solid white;
+        border-radius: 7px;
     }
     section p{
-        
         text-align: center;
         margin: 25%;
     }
 footer{
-    position: bottom;
-    bottom: 0px;
+    position: relative;
+    bottom: 0;
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: rgb(222, 222, 222);
     text-align: center;
-    font-style: italic;
-    
-    }
+    font-style: italic;    
+}
