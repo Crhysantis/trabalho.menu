@@ -3,10 +3,13 @@
     padding: 0px;
     
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 #bodystyle{
     height: 100%;
-    background-image: url(fundopreto.jpg);
     }
 
 header{
@@ -40,6 +43,20 @@ header{
     header nav menu a:hover{
         color: rgb(255, 144, 144)
         }
+span div p{
+    font-size: 0.9rem;
+    padding: 14px;
+    color: red;
+}
+
+#container{
+    padding: 70px 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    #container section {
+        margin-bottom: 30px;
+    }
 
 #img{
     height: 20px;       
@@ -50,26 +67,196 @@ header{
 }
 
 .sectionone{
-    border-bottom: 3px solid white;
-    border-radius: 7px;
-    padding-top: 70px;  
+}
+.linhadetitulos{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.linksection{
+    text-decoration: none;
+    white-space: normal;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(139, 0, 0);
+    justify-content: space-between;
+    display: flex;
+    box-shadow: 1px black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkbox{
+    max-width: ;
+    width: 22%;
+    border-bottom: 1px thin #FF000000;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #f3f3f3;
+}
+
+.link{
+    box-shadow: rgb(222, 150, 80);
+    border-bottom: 1px thin black;
+    border-radius: 10px;
+}
+
+.textlink{
+    text-decoration: none;
+    white-space: normal;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(139, 0, 0);
+}
+
+.imgnoticia{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
 #sectiontitle{
         text-align: center;
         font-size: 60px;
-        color: rgb(222, 222, 222);
-        border-top: 3px solid white;
+        color: rgb(0, 0, 0);
+        border-top: 3px solid black;
         border-radius: 7px;
-    }
+}
+
+#eleicoestitulo{
+    font-size: 22px;
+    color: rgb(250, 0, 0);
+    text-align: left;
+    border-bottom: 3px solid #FF0020;
+}
+
+#sigaacobertura{
+    margin-top: 10px;
+    background-color: red;
+    font-size: 12px;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    border: 3px solid #FF0000;
+    border-radius: 3px;
+
+}
 
 #sectiontext{
+        flex-wrap: wrap;
         text-align: center;
         margin: 25%;
         font-size: 40px;
-        color: rgb(222,222,222);
+        color: rgb(0, 0, 0);
 
     }
+
+.sectiontwo{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 16px;
+}
+    #linhadetitulodois{
+        display: flex;
+        height: 30px;
+        align-items: center;
+    }
+    #linhadetitulodois #quadradinho{
+        height: 12px;
+        width: 12px;
+        background-color: orange;
+        margin-right: 10px;
+    }
+    #linhadetitulodois #linhazinha{
+        height: 1px;
+        margin-left: 10px;
+        border-bottom: 3px solid orange;
+        border-top: 3px solid orange;
+        flex: 1;
+
+    }
+    #linkboxdois{
+        display: flex;
+        margin: 15px 0;
+    }
+        #linkprincipal{
+            display: flex;
+            width: 60%;
+            position: relative;
+        }
+        #linkprincipal img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        #linkprincipal .text{
+            position: absolute;
+            bottom: 0;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            z-index: 1;
+        }
+        #linkprincipal .text .linhaestilo{
+            width: 100px;
+            height: 3px;
+            background-color: orange;
+            border-radius: 1px;
+            margin-bottom: 10px;
+        }
+         #linkprincipal .overlay{
+            position: absolute;
+            bottom: 0;
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            opacity: 0.4;
+            z-index: 0;
+        }
+    #linkcolumn{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        flex: 1;
+        justify-content: space-between;
+    }
+        #linkcolumn .itemcolumn{
+            display: flex;
+            align-items: center;
+        }
+        #linkcolumn .itemcolumn img{
+            height: 85px;
+            border-radius: 10px;
+            width: 25%;
+            object-fit: cover;
+            margin-right: 10px;        
+        }
+        #linkcolumn .itemcolumn a{
+            display: flex;
+            align-items: center;
+        }
+    #linkline{
+        display: flex;
+        height: 100px;
+        align-items: center;
+    }
+    #linkline .itemline{
+        display: flex;
+    }
+    #linkline .itemline:not(:last-child){
+        margin-right: 15px;
+        border-right: 2px solid orange;
+    }
+.sectiontwo .destaque{
+    color: orange;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
 
 #footerstyle{
     position: relative;
@@ -79,4 +266,12 @@ header{
     color: rgb(222, 222, 222);
     text-align: center;
     font-style: italic;    
+}
+
+@media (max-width: 700px)
+{
+  .sectiontwo
+   {
+    font-size: 8px;
+   }
 }
